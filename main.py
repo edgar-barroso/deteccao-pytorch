@@ -4,12 +4,10 @@ from torch import nn, optim
 from torchvision.transforms.functional import convert_image_dtype
 
 # Carregamento de Dados e Modelos
-from torch.utils.data import DataLoader
 from torchvision import datasets, models
 from torchvision import transforms
 
 # Plots e análises
-from sklearn.metrics import accuracy_score
 import matplotlib.pyplot as plt
 import numpy as np
 import time, os
