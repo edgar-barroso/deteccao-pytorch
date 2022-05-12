@@ -49,8 +49,6 @@ outputs = models.detection.faster_rcnn.fasterrcnn_resnet50_fpn(pretrained=True,p
 foto_1 = ler_imagem('foto2.jpg')
 foto_2 = ler_imagem('foto2.jpg')
 
-grid = juntar_fotos([foto_1,foto_2])
-
 batch_int = torch.stack([foto_1, foto_2])
 batch = convert_image_dtype(batch_int, dtype=torch.float)
 
